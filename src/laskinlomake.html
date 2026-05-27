@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nelilaskin</title>
+</head>
+<body>
+
+    <h1>Nelilaskin</h1>
+
+    <form action="laskin.php" method="post">
+
+        <label>Ensimmäinen luku:</label>
+        <input type="number" name="luku1" step="any" required>
+
+        <br><br>
+
+        <label>Toinen luku:</label>
+        <input type="number" name="luku2" step="any" required>
+
+        <br><br>
+
+        <label>Valitse laskutoimitus:</label>
+
+        <select name="operaatio" required>
+            <option value="+">Yhteenlasku (+)</option>
+            <option value="-">Vähennyslasku (-)</option>
+            <option value="*">Kertolasku (*)</option>
+            <option value="/">Jakolasku (/)</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Laske">
+
+    </form>
+
+</body>
+</html>

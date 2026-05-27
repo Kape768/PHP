@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taulukon luonti</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Luo HTML-taulukko</h1>
+
+    <form action="table.php" method="POST">
+
+        <label for="rivit">Rivien määrä:</label>
+        <input type="number" id="rivit" name="rivit" min="1" required>
+
+        <label for="sarakkeet">Sarakkeiden määrä:</label>
+        <input type="number" id="sarakkeet" name="sarakkeet" min="1" required>
+
+        <label for="taustavari">Taulukon taustaväri:</label>
+        <input type="color" id="taustavari" name="taustavari" value="#add8e6">
+
+        <label for="tekstivari">Tekstin väri:</label>
+        <input type="color" id="tekstivari" name="tekstivari" value="#000000">
+
+        <button type="submit">Luo taulukko</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+html, body {
+ height: 100%; margin: 0; color: white; 
+}
+body { 
+    background: linear-gradient(to right, blue, purple); min-height: 100vh; display: flex; flex-direction: column; 
+}
+section { 
+    flex: 1; 
+}
+footer { 
+    background-color: #212529; color: white; text-align: center; padding: 20px; width: 100%; 
+
+}
+.col-md-4 {
+     transition: all 0.3s ease; padding: 20px; border-radius: 10px; 
+    }
+    .col-md-4:hover { 
+        transform: translateY(-10px) scale(1.03); box-shadow: 0 10px 25px rgba(0,0,0,0.2); background-color: rgb(133, 19, 179); 
+    }
+    .row.mt-4 { 
+        margin-top: 50px;
+     }

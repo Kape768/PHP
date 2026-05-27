@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Yhteystiedot</title>
+</head>
+<body>
+
+<h1>Yhteystietolomake</h1>
+
+<form action="tarkistus.php" method="POST">
+
+    <label>Etunimi:</label><br>
+    <input type="text" name="etunimi"><br><br>
+
+    <label>Sukunimi:</label><br>
+    <input type="text" name="sukunimi"><br><br>
+
+    <label>Sukupuoli:</label><br>
+
+    <input type="radio" name="sukupuoli" value="Mies"> Mies
+    <input type="radio" name="sukupuoli" value="Nainen"> Nainen
+    <input type="radio" name="sukupuoli" value="Muu"> Muu
+
+    <br><br>
+
+    <label>Henkilötunnus:</label><br>
+    <input type="text" name="hetu" placeholder="010101-123A"><br><br>
+
+    <label>Sähköposti:</label><br>
+    <input type="text" name="email"><br><br>
+
+    <label>Katuosoite:</label><br>
+    <input type="text" name="osoite"><br><br>
+
+    <label>Postinumero:</label><br>
+    <input type="text" name="postinumero"><br><br>
+
+    <label>Postitoimipaikka:</label><br>
+    <input type="text" name="postitoimipaikka"><br><br>
+
+    <input type="submit" value="Lähetä">
+
+</form>
+
+</body>
+</html>

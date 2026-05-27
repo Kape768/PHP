@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lempiruoka</title>
+</head>
+<body>
+
+    <h1>Valitse lempiruokasi</h1>
+
+    <form action="tulos.php" method="POST">
+
+        <label for="ruoka">Lempiruoka:</label>
+
+        <select name="ruoka" id="ruoka">
+            <option value="">-- Valitse ruoka --</option>
+            <option value="pizza">Pizza</option>
+            <option value="sushi">Sushi</option>
+            <option value="hampurilainen">Hampurilainen</option>
+            <option value="pasta">Pasta</option>
+            <option value="salaatti">Salaatti</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Lähetä">
+
+    </form>
+
+</body>
+
+</html>
