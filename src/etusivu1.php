@@ -8,7 +8,6 @@ session_start();
     <title>Palautesovellus</title>
 </head>
 <body>
-
 <h1>Palautesovellus</h1>
 
 <p>Tällä sovelluksella voit antaa palautetta.</p>
@@ -31,3 +30,9 @@ if (isset($_SESSION["nimi"])) {
 
 </body>
 </html>
+<?php
+include "footer.php";
+?>
+<?php
+include "header.php";
+?>
